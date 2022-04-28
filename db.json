@@ -1,17 +1,41 @@
 {
-    "product": [
-      {
-        "id": 1,
-        "name": "json-server",
-        "status": "recomended",
-        "price": "100",
-        "pic": "/person4.jpg"
-      },
-      {
-        "id": 2,
-        "name": "json-server",
-        "status": "recomended",
-        "price": "100"
-      }
-    ]
+  "data": [
+    {
+    "name": "T-shirt",
+    "price": "9,99 zł",
+    "image":"tshirt.jpg",
+    "status":"recommended"
+    },
+    {
+    "name": "Sweter",
+    "price": "59,99 zł",
+    "image":"sweter.jpg",
+    "status":"new"
+    },
+    {
+    "name": "Spodnie",
+    "price": "99,99 zł",
+    "image":"spodnie.jpg",
+    "status":"saleout"
+    },
+    {
+    "name": "Klapki",
+    "price": "29,99 zł",
+    "image":"klapki.jpg",
+    "status":"bestseller"
+    },
+    {
+    "name": "Czapka",
+    "price": "39,99 zł",
+    "image":"czapka.jpg",
+    "status":"promotion",
+    "newprice": "29,99 zł"
+    },
+    {
+    "name": "Spódnica",
+    "price": "89,99 zł",
+    "image":"spodnica.jpg",
+    "status":"new"
+    }
+    ]  
   }

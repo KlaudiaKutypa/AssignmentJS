@@ -11,6 +11,8 @@
 //   }
 
 //   handleSeeProducts();
+
+
 let products = {
     data: [
     {
@@ -110,6 +112,8 @@ function getSelectedValue () {
     for (let i of products.data) {
         if (i.status == selectedValue) {
             console.log(i.status)
+            //tutaj chciałam dodać atrybut disabled lub jakąś hide/active
+            //ale coś mi nie wychodziło
         } 
     }
 }
