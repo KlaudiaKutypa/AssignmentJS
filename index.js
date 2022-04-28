@@ -1,6 +1,6 @@
 
 
-// const API = "http://localhost:3001/product"
+// const API = "http://localhost:3001/data"
 // let name = [];
 
 // const handleSeeProducts = () => {
