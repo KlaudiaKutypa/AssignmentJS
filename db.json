@@ -1,0 +1,17 @@
+{
+    "product": [
+      {
+        "id": 1,
+        "name": "json-server",
+        "status": "recomended",
+        "price": "100",
+        "pic": "/person4.jpg"
+      },
+      {
+        "id": 2,
+        "name": "json-server",
+        "status": "recomended",
+        "price": "100"
+      }
+    ]
+  }

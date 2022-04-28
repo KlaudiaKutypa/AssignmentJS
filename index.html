@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="Filter">
+        <h3>Wybierz status:</h3>
+        <select id="list" onChange="getSelectedValue()">
+            <option value="recommended">recommended</option>
+            <option value="saleout">saleout</option>
+            <option value="bestseller">bestseller</option>
+            <option value="promotion">promotion</option>
+            <option value="new">new</option>
+        </select>
+    </div>
+    <div id="Products"></div>
+
+    <script src="index.js"></script>    
+</body>
+</html>
