@@ -14,7 +14,7 @@ const handleSeeProducts = () => {
             
             let card = document.createElement("div");
             card.classList.add("Product-card");
-            card.setAttribute("id", product[i].status)
+            card.setAttribute("data-filter", product[i].status)
             
             let status = document.createElement("h6")
             status.classList.add("status")
@@ -74,43 +74,55 @@ handleSeeProducts();
 function getSelectedValue () {
     let selectedValue = document.getElementById("list").value
     console.log(selectedValue)
+    let product = document.querySelectorAll(".Product-card");
+    console.log(product)
+
+    for (let i=0; i<product.length; i++) {
+        product[i].classList.remove("active")
+        product[i].classList.add("hide")
+
+        if(product[i].getAttribute("data-filter") == selectedValue || selectedValue == "all") {
+            product[i].classList.remove("hide")
+            product[i].classList.add("active")
+        }
+    }
     // let card = document.getElementsByClassName(".Product-card")
     // console.log(card)
-    let all = document.querySelectorAll("Product-card")
-    let idnew = document.getElementById("new")
-    console.log(idnew)
-    let idrec = document.getElementById("recommended")
-    let so = document.getElementById("saleout")
-    let best = document.getElementById("bestseller")
-    let prom = document.getElementById("promotion")
+    // let all = document.querySelectorAll("Product-card")
+    // let idnew = document.getElementById("new")
+    // console.log(idnew)
+    // let idrec = document.getElementById("recommended")
+    // let so = document.getElementById("saleout")
+    // let best = document.getElementById("bestseller")
+    // let prom = document.getElementById("promotion")
 
-    if (selectedValue == "bestseller") {
-        all.classList.toggle("hide")
-        idrec.classList.toggle("hide")
-        so.classList.toggle("hide")
-        prom.classList.toggle("hide")
-        idnew.classList.toggle("hide")
-    } else if (selectedValue == "new") {
-        idrec.classList.toggle("hide")
-        so.classList.toggle("hide")
-        best.classList.toggle("hide")
-        prom.classList.toggle("hide")
-    } else if (selectedValue == "recommended") {
-        so.classList.toggle("hide")
-        best.classList.toggle("hide")
-        prom.classList.toggle("hide")
-        idnew.classList.toggle("hide")
-    } else if (selectedValue == "saleout") {
-        idrec.classList.toggle("hide")
-        best.classList.toggle("hide")
-        prom.classList.toggle("hide")
-        idnew.classList.toggle("hide")
-    }else if (selectedValue == "promotion") {
-        idrec.classList.toggle("hide")
-        best.classList.toggle("hide")
-        so.classList.toggle("hide")
-        idnew.classList.toggle("hide")
-    }
+    // if (selectedValue == "bestseller") {
+    //     all.classList.toggle("hide")
+    //     idrec.classList.toggle("hide")
+    //     so.classList.toggle("hide")
+    //     prom.classList.toggle("hide")
+    //     idnew.classList.toggle("hide")
+    // } else if (selectedValue == "new") {
+    //     idrec.classList.toggle("hide")
+    //     so.classList.toggle("hide")
+    //     best.classList.toggle("hide")
+    //     prom.classList.toggle("hide")
+    // } else if (selectedValue == "recommended") {
+    //     so.classList.toggle("hide")
+    //     best.classList.toggle("hide")
+    //     prom.classList.toggle("hide")
+    //     idnew.classList.toggle("hide")
+    // } else if (selectedValue == "saleout") {
+    //     idrec.classList.toggle("hide")
+    //     best.classList.toggle("hide")
+    //     prom.classList.toggle("hide")
+    //     idnew.classList.toggle("hide")
+    // }else if (selectedValue == "promotion") {
+    //     idrec.classList.toggle("hide")
+    //     best.classList.toggle("hide")
+    //     so.classList.toggle("hide")
+    //     idnew.classList.toggle("hide")
+    // }
 
 
     // for (i=0; i < product.length; i++) {
