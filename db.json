@@ -7,35 +7,84 @@
     "status":"recommended"
     },
     {
-    "name": "Sweter",
+    "name": "Sweater",
     "price": "59,99 zł",
     "image":"sweter.jpg",
     "status":"new"
     },
     {
-    "name": "Spodnie",
+    "name": "Jeans",
     "price": "99,99 zł",
     "image":"spodnie.jpg",
-    "status":"saleout"
+    "status":"new"
     },
     {
-    "name": "Klapki",
+    "name": "Flip-flops",
     "price": "29,99 zł",
     "image":"klapki.jpg",
     "status":"bestseller"
     },
     {
-    "name": "Czapka",
+    "name": "Hat",
     "price": "39,99 zł",
     "image":"czapka.jpg",
     "status":"promotion",
     "newprice": "29,99 zł"
     },
     {
-    "name": "Spódnica",
+    "name": "Skirt",
     "price": "89,99 zł",
     "image":"spodnica.jpg",
     "status":"new"
-    }
+    },
+    {
+    "name": "Shorts",
+    "price": "89,99 zł",
+    "image":"spodenki.jpg",
+    "status":"recommended"
+    },
+    {
+    "name": "Dress",
+    "price": "119,99 zł",
+    "image":"sukienka.jpg",
+    "status":"saleout"
+    },
+    {
+    "name": "Dress",
+    "price": "99,99 zł",
+    "image":"sukienka3.jpg",
+    "status":"bestseller"
+    },
+    {
+    "name": "High heels",
+    "price": "69,99 zł",
+    "image":"szpilki.jpg",
+    "status":"bestseller"
+    },
+    {
+    "name": "Shirt",
+    "price": "99,99 zł",
+    "image":"koszula.jpg",
+    "status":"promotion",
+    "newprice": "79,99 zł"
+    },
+    {
+    "name": "Hoodie",
+    "price": "49,99 zł",
+    "image":"bluza2.jpg",
+    "status":"recommended"
+    },
+    {
+      "name": "Hoodie",
+      "price": "49,99 zł",
+      "image":"bluza.jpg",
+      "status":"recommended"
+      },
+    {
+    "name": "Jeans",
+    "price": "89,99 zł",
+    "image":"dzinsy2.jpg",
+    "status":"recommended"
+      }
     ]  
   }
