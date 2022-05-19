@@ -59,15 +59,9 @@ const handleSeeProducts = () => {
             
             card.appendChild(price)
             document.getElementById("Products").appendChild(card)
-             
         }
-
-        
 })
-
-
 }
-
 handleSeeProducts();
 
 
@@ -86,56 +80,6 @@ function getSelectedValue () {
             product[i].classList.add("active")
         }
     }
-    // let card = document.getElementsByClassName(".Product-card")
-    // console.log(card)
-    // let all = document.querySelectorAll("Product-card")
-    // let idnew = document.getElementById("new")
-    // console.log(idnew)
-    // let idrec = document.getElementById("recommended")
-    // let so = document.getElementById("saleout")
-    // let best = document.getElementById("bestseller")
-    // let prom = document.getElementById("promotion")
-
-    // if (selectedValue == "bestseller") {
-    //     all.classList.toggle("hide")
-    //     idrec.classList.toggle("hide")
-    //     so.classList.toggle("hide")
-    //     prom.classList.toggle("hide")
-    //     idnew.classList.toggle("hide")
-    // } else if (selectedValue == "new") {
-    //     idrec.classList.toggle("hide")
-    //     so.classList.toggle("hide")
-    //     best.classList.toggle("hide")
-    //     prom.classList.toggle("hide")
-    // } else if (selectedValue == "recommended") {
-    //     so.classList.toggle("hide")
-    //     best.classList.toggle("hide")
-    //     prom.classList.toggle("hide")
-    //     idnew.classList.toggle("hide")
-    // } else if (selectedValue == "saleout") {
-    //     idrec.classList.toggle("hide")
-    //     best.classList.toggle("hide")
-    //     prom.classList.toggle("hide")
-    //     idnew.classList.toggle("hide")
-    // }else if (selectedValue == "promotion") {
-    //     idrec.classList.toggle("hide")
-    //     best.classList.toggle("hide")
-    //     so.classList.toggle("hide")
-    //     idnew.classList.toggle("hide")
-    // }
-
-
-    // for (i=0; i < product.length; i++) {
-    //     if (product[i].status == selectedValue) {
-    //         console.log(product[i].status)
-    //         let card = document.getElementsByClassName("Product-card")
-    //         this.card.classList.toggle("hide")
-    //         console.log(card)
-            
-    //         //tutaj chciałam dodać atrybut disabled lub jakąś hide/active
-    //         //ale coś mi nie wychodziło
-    //     } 
-    // }
 }
 getSelectedValue();
 
